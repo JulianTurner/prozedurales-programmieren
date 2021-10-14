@@ -97,7 +97,7 @@
   ## Support :heart: & Feedback	:muscle:
 
 :point_right: Bitte bachtet, ich habe keinen Mac, d.h. solange ihr mir keinen zur Verfügung stellt :grin: bin ich auf euch angewiesen.  
-:point_right: Sollte estwas nicht funktionieren, gebt eine kruze Info, oder ihr mach ihr wisst schon was.  
+:point_right: Sollte estwas nicht funktionieren, gebt eine kruze Info, oder ihr macht :speak_no_evil:.  
   
 :ok_hand: Falls ihr meine Arbeit gut findet, und ich euch damit arbeit abnehmen kann würde ich mich über einen 	:coffee:, oder :beers: freuen => [paypal](paypal.me/JulianAlexanderT)
 
