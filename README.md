@@ -2,32 +2,101 @@
 
 ## gcc installieren
 
-  - ### Linux
+  - #### Linux
     ```
     sudo apt install build-essential && sudo apt-get install manpages-dev
     ```
+  - ### Windows
+    [download Installer](https://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download)  
+     :bangbang: Installation durchführen und **PC neustarten**
     
-    Anschließend überprüfen ob gcc installiert ist
+  - #### Mac
+    ```
+    brew install gcc
+    ```
+    
+    ## Anschließend überprüfen ob gcc installiert ist
     ```
     gcc -v
     ```
-    Könnte sowas zurückgeben
-    > gcc version 9.3.0
+    > :+1: gcc version 9.3.0
 
+## git installieren
+  - #### Linux
+    ```
+    sudo apt-get install git
+    ```
+  - #### Windows
+     [download Installer](https://gitforwindows.org/)  
+     
+    :bangbang:Installation durchführen und **PC neustarten**
+  - #### MAC
+    ```
+    brew install git
+    ```
+    oder
+    
+    https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect
+    
+   ## Anschließend überprüfen ob git installiert ist
+   ```
+   git --version
+   ```
+   > :+1: git version 2.25.1
 
+## Repo klonen (Linux, Windows, Mac)
+   - Ordner erstellen zb im ```~``` Verzeichnis
+     ```
+     mkdir ~/studium
+     ```
+   - in den Ordner wechseln
+     ```
+     cd ~/studium     
+      ```
+   - Repo clonen
+     ```
+     git clone https://github.com/JulianTurner/prozedurales-programmieren.git     
+     ```
+   - in den Ordner wechseln
+      ```
+      cd prozedurales-programmieren      
+      ```
+   - VS Code mit dem Ornder starten
+      ```
+      code .      
+      ```
+      > :grey_question:  Falls ihr eine Fehlermeldung auf dem MAC bekommt müsst ihr VS Code manuell öffnen und folgendes durchführen  
+      > ![image](https://user-images.githubusercontent.com/33830803/137289187-c57878a6-3d9c-4672-ab62-84b2afc63bd9.png)
 
 
 ## Kompilieren & Ausführen
 
   - ### VS Code
 
-    dank den Daten im .vscode Ordner einfach die Datei öffnen und ausführen:
+    dank den Daten im .vscode Ordner einfach die Datei z.b. `hello_world.c` öffnen und ausführen:
     > F5 
-
+    > :+1: Hello world!
+  
   - ### Terminal
       ```
       gcc <NAME_DER_DATEI_MIT_SOUCECODE>.c -o <NAME_DER_ANWENDUNG>
       ```
-      > -o steht für output und gibt dem output den Namen wie angeben
+     > :+1: Hello world!  
+     > Achtet auf die Endung der ersten Datei. -o steht für output und setzt den Namen der kompilierten Datei  
 
-      > Achtet auch drauf die Endung der ersten Datei
+
+
+
+
+  ## Support :heart: & Feedback	:muscle:
+
+:point_right: Bitte bachtet, ich habe keinen Mac, d.h. solange ihr mir keinen zur Verfügung stellt :grin: bin ich auf euch angewiesen.  
+:point_right: Sollte estwas nicht funktionieren, gebt eine kruze Info, oder ihr mach ihr wisst schon was.  
+  
+:ok_hand: Falls ihr meine Arbeit gut findet, und ich euch damit arbeit abnehmen kann würde ich mich über einen 	:coffee:, oder :beers: freuen => [paypal](paypal.me/JulianAlexanderT)
+
+
+:star_struck: Ihr wollt mitwirken und richtig druchstarten? Dann =>  :raising_hand_man: :raising_hand_woman:
+
+Mein persönliches Setup besteht aus:
+Widows 10 und WSL 2 mit Ubuntu (kann ich nur empfehlen)
