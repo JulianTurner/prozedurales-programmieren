@@ -1,11 +1,11 @@
 ## TOC
 
 - [TOC](#toc)
-- [gcc installieren](#gcc-installieren)
+- [gcc & gdb installieren](#gcc--gdb-installieren)
   - [Linux](#linux)
   - [Windows](#windows)
   - [Mac](#mac)
-  - [Anschließend überprüfen ob gcc installiert ist](#anschließend-überprüfen-ob-gcc-installiert-ist)
+  - [Anschließend überprüfen ob gcc & gdb installiert ist](#anschließend-überprüfen-ob-gcc--gdb-installiert-ist)
 - [git installieren](#git-installieren)
   - [Linux](#linux-1)
   - [Windows](#windows-1)
@@ -21,11 +21,15 @@
 ----------
 
 
-## gcc installieren
+## gcc & gdb installieren
 
   ### Linux
   ```
   sudo apt install build-essential && sudo apt-get install manpages-dev
+  ```
+  und den debugger installieren
+  ```
+  sudo apt-get install gdb
   ```
    ### Windows
    ([download Installer](https://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download))
@@ -35,13 +39,22 @@
   ```
   brew install gcc
   ```
-    
-  ### Anschließend überprüfen ob gcc installiert ist
+  und den debugger
+  ```
+  brew install gdb
+  ```  
+  ### Anschließend überprüfen ob gcc & gdb installiert ist
   ```
   gcc -v
   ```
 
   > gcc version 9.3.0 :+1:
+
+  ```
+  gdb -v
+  ```
+  > GNU gdb (Ubuntu 9.2-0ubuntu1~20.04) 9.2 :+1:
+
 ----------
 
 ## git installieren
