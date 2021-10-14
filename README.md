@@ -73,13 +73,19 @@
 
   - ### VS Code
 
-    dank den Daten im .vscode Ordner einfach die Datei z.b. `hello_world.c` öffnen und ausführen:
-    > F5 
+    dank den Daten im .vscode Ordner einfach die Datei z.b. `hello_world.c` öffnen und mit F5 ausführen:
     > :+1: Hello world!
   
   - ### Terminal
       ```
       gcc <NAME_DER_DATEI_MIT_SOUCECODE>.c -o <NAME_DER_ANWENDUNG>
+      ```  
+      Bzw. für das Beispiel `hello_world`
+      ```
+      gcc hello_world.c -o hello_world
+      ```
+      ```
+      ./hello_world
       ```
      > :+1: Hello world!  
      > Achtet auf die Endung der ersten Datei. -o steht für output und setzt den Namen der kompilierten Datei  
