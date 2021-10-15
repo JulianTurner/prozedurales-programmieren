@@ -9,7 +9,7 @@ int main() {
   scanf("%d", &zahl);
 
   if (zahl > 0) {
-    printf("%d", zahl % 10);
+    printf("%d\n", zahl % 10);
   } else {
     printf("Die Zahl ist 0");
   }
