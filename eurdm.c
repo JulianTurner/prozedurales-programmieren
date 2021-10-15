@@ -10,7 +10,7 @@ int main() {
   scanf("%d", &eur);
 
   if (eur > 0) {
-    printf("Das wären %f DM\n", eur * wechselkurs);
+    printf("%d€ wären %fDM\n", eur, eur * wechselkurs);
   } else {
     printf("0 = 0");
   }
