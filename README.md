@@ -25,7 +25,7 @@
 
   ### Linux
   ```
-  sudo apt install build-essential && sudo apt-get install manpages-dev
+  sudo apt-get update && sudo apt install build-essential && sudo apt-get install manpages-dev
   ```
   und den debugger installieren
   ```
