@@ -6,5 +6,5 @@ int main() {
   printf("Bitte geben Sie eine Zahlen ein: ");
   scanf("%d", &zahl1);
   printf("Sie haben %d eingegeben\n", zahl1);
-  return 0; // Beende ohne Fehler /// apok 
+  return 0; // Beende ohne Fehler 
 }
