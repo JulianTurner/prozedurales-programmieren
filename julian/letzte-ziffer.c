@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+/*
+Gebe mit Hilfe des Modulo Operators die letze Ziffer einer Ganzzahl zurück
+*/
 int main() {
   int zahl;
 

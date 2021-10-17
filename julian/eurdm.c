@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+/*
+Gebe den eingegeben € Wert in DM aus.
+*/
 int main() {
   int eur;
   float wechselkurs = 1.95583;
