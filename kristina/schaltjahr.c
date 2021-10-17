@@ -1,3 +1,5 @@
+// Fragen Sie nach einer Jahreszahl und geben Sie dann aus,
+// ob es sich dabei um ein Schaltjahr handelt oder nicht.
 #include <stdio.h>
 int main() {
   int num;
