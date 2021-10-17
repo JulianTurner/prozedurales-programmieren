@@ -15,7 +15,19 @@ int main() {
          "handelt.\n");
   printf("Bitte das Jahr eingeben: ");
   scanf("%d", &jahr);
+  // check if not 0
   if (jahr > 0) {
+    // check if dividable by 4
+    if (jahr % 4 == 0) {
+      if (jahr % 100 == 0) {
+        printf("durch 100 teilbar");
+      } else if ((jahr % 100 == 0) && (jahr % 400 == 0))
+
+    } else {
+      printf("%d ist kein Schaltjahr", jahr);
+    }
+  } else {
+    printf("Das Jahr müss großer 0 sein");
   }
   return 0;
 }
