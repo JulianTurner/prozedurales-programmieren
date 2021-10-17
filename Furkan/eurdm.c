@@ -6,5 +6,5 @@ int main() {
 
         printf("Geben Sie einen Euro Betrag ein, um in DM umzurechnen: ");
         scanf("%d", &eur); 
-        printf("Das sind %f DM",&dm, eur * Wechselkurs);
+        printf("Das sind %f DM\n",&dm, eur * Wechselkurs);
     }
