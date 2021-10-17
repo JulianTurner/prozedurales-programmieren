@@ -19,15 +19,23 @@ int main() {
   if (jahr > 0) {
     // check if dividable by 4
     if (jahr % 4 == 0) {
-      if (jahr % 100 == 0) {
-        printf("durch 100 teilbar");
-      } else if ((jahr % 100 == 0) && (jahr % 400 == 0))
-
+      if (jahr % 100 == 0 && jahr % 400 == 0) {
+        printf("%d ist durch 400 und 4 teilbar und daher ein Schaltjahr\n",
+               jahr);
+      } else if (jahr % 100 == 0) {
+        printf("%d ist zwar durch 4 teilbar aber auch durch 100 teilbar und "
+               "daher "
+               "kein Schaltjahr\n",
+               jahr);
+      } else {
+        printf("%d ist durch 4 teilbar und daher ein Schaltjahr\n", jahr);
+      }
     } else {
-      printf("%d ist kein Schaltjahr", jahr);
+      printf("%d ist nicht durch 4 teilbar und daher kein Schaltjahr\n", jahr);
     }
   } else {
-    printf("Das Jahr müss großer 0 sein");
+    printf("Das Jahr müss großer als 0 sein\n");
   }
+
   return 0;
 }
