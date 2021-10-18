@@ -11,6 +11,8 @@
   - [Windows](#windows-1)
   - [MAC](#mac-1)
   - [Anschließend überprüfen ob Git installiert ist](#anschließend-überprüfen-ob-git-installiert-ist)
+  - [Name angeben](#name-angeben)
+  - [Email angeben](#email-angeben)
 - [Repo klonen (Linux, Windows, Mac)](#repo-klonen-linux-windows-mac)
 - [Kompilieren & Ausführen](#kompilieren--ausführen)
   - [VS Code](#vs-code)
@@ -80,6 +82,16 @@
    git --version
    ```
    > git version 2.25.1 :+1: 
+
+   ### Name angeben
+   ```
+   git config --global user.name "<DEIN NAME>"
+   ``` 
+
+  ### Email angeben
+   ```
+   git config --global user.email "<DEINE EMAIL>"
+   ``` 
    
 ----------
 
