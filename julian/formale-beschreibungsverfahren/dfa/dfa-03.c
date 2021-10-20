@@ -3,7 +3,7 @@
 
 int q1(char symbol) {
   if (symbol == 'a') {
-    return 1;
+    return 2;
   }
   if (symbol == 'b') {
     return 2;
