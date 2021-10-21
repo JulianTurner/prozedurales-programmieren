@@ -11,7 +11,7 @@ Die Sprache:    L = { w ϵ Σ* | w enthält min 1 a}
 int main() {
   char word[256] = "";
   // get the word
-  printf("Bitt das zu prüfende Wort eingeben:\n");
+  printf("Bitte das zu prüfende Wort eingeben:\n");
   scanf("%s", word);
   int i;
   int dfa = 0;
