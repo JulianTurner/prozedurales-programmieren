@@ -6,7 +6,9 @@ int main() {
   int zahlen[anzahlEingaben];
   printf("Wie viele Zahlen sollen summiert werden?\n");
   scanf("%d", &anzahlEingaben);
+
   printf("Es sollen %d Zahlen summiert werden.\n", anzahlEingaben);
+
   // zahlen eingeben
   for (int i = 1; i <= anzahlEingaben; i++) {
     int zahl;
@@ -14,6 +16,7 @@ int main() {
     scanf("%d", &zahl);
     zahlen[i - 1] = zahl;
     summe += zahl;
+
     if (zahl > 0) {
       summePositiv += zahl;
     }
@@ -21,6 +24,7 @@ int main() {
       summeNegativ += zahl;
     }
   }
+
   printf("\nDie Summe aller positiven Zahlen ergibt: %d\n", summePositiv);
   printf("\nDie Summe aller negativen Zahlen ergibt: %d\n", summeNegativ);
 
