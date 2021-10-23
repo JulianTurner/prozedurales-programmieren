@@ -38,8 +38,8 @@ int main() {
       printf("Modulo: %d %%  %d = %d\n", zahl1, zahl2, modulo);
     }
   }
-  // Im Loop bis die 0 als erste zahl eingegeben wird
-  while (zahl1);
+  // Im Loop bis die 0 als erste zahl eingegeben wird, 1 ist immer wahr
+  while (1);
 
   // Hinweis
   printf(
