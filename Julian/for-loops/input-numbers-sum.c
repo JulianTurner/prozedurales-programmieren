@@ -10,7 +10,7 @@ int main() {
   // zahlen eingeben
   for (int i = 1; i <= anzahlEingaben; i++) {
     int zahl;
-    printf("\n%d: ", i);
+    printf("\n%d von %d: ", i, anzahlEingaben);
     scanf("%d", &zahl);
     zahlen[i - 1] = zahl;
     summe += zahl;
@@ -21,6 +21,10 @@ int main() {
       summeNegativ += zahl;
     }
   }
+  printf("\nDie Summe aller positiven Zahlen ergibt: %d\n", summePositiv);
+  printf("\nDie Summe aller negativen Zahlen ergibt: %d\n", summeNegativ);
+
+  // BONUS
   // summe ausgeben
   printf("\nDie Summe der Zahlen ");
   // zahlen ausgeben
@@ -31,9 +35,6 @@ int main() {
     }
   }
   printf(" ergibt: %d\n", summe);
-
-  printf("\nDie Summe aller positiven Zahlen ergibt: %d\n", summePositiv);
-  printf("\nDie Summe aller negativen Zahlen ergibt: %d\n", summeNegativ);
 
   return 0;
 }
