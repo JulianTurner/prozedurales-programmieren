@@ -28,7 +28,7 @@ int main() {
   printf("\nDie Summe aller positiven Zahlen ergibt: %d\n", summePositiv);
   printf("\nDie Summe aller negativen Zahlen ergibt: %d\n", summeNegativ);
 
-  // BONUS
+  // ***BONUS***
   // summe ausgeben
   printf("\nDie Summe der Zahlen ");
   // zahlen ausgeben

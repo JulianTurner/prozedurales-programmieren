@@ -24,7 +24,7 @@ int main() {
     printf("Produkt: %d * %d = %d\n", zahl1, zahl2, zahl1 * zahl2);
     // Differenz
     printf("Differenz: %d - %d = %d\n", zahl1, zahl2, zahl1 - zahl2);
-    if (zahl2 == 0) {
+    if (!zahl2) {
       // Quotient
       printf("Durch 0 teilen ist nicht möglich\n");
       // Divisionsrest
@@ -39,10 +39,11 @@ int main() {
     }
   }
   // Im Loop bis die 0 als erste zahl eingegeben wird
-  while (zahl1 > 0 || zahl1 < 0);
+  while (zahl1);
 
   // Hinweis
-  printf("Das Programm wurde beendet da als erste Zahl die 0 eingegeben wurde");
+  printf(
+      "Das Programm wurde beendet da als erste Zahl die 0 eingegeben wurde\n");
   //
   return 0;
 }
