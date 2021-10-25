@@ -28,20 +28,19 @@ int main() {
     temp = zahl1;
     zahl1 = zahl2;
     zahl2 = temp;
-    temp = 1;
   }
 
-  int none = 1;
+  int none = 0;
   // alle durch 7 teilbaren Zahlen ausgeben
   for (zahl1; zahl1 <= zahl2; zahl1++) {
     if (zahl1 % 7 == 0) {
       printf("\n%d\n", zahl1);
-      none = 0;
+      none = 1;
     }
   }
 
   // check if any
-  if (none) {
+  if (!none) {
     printf("Es wurde keine Zahl gefunden.\n");
   }
 
