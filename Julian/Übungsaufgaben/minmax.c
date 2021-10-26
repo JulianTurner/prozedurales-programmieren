@@ -13,7 +13,11 @@ int main() {
     int input;
     printf("\n%d von %d: ", 1 + i, arraySize);
     scanf("%d", &input);
-
+    // hier wird entweder die niedrigste oder höchste Zahl gesetzt damit kein
+    // random Wert ausgegebn wird
+    if (!i) {
+      zahlLow = zahlHigh = input;
+    }
     if (zahlLow > input) {
       zahlLow = input;
     }
