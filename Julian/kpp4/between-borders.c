@@ -23,9 +23,8 @@ int main() {
     printf("Die Zahl muss größer 0 sein.");
   }
   // kleinere Zahl kommt zuerst zum hochzählen
-  int temp = 0;
   if (zahl1 > zahl2) {
-    temp = zahl1;
+    int temp = zahl1;
     zahl1 = zahl2;
     zahl2 = temp;
   }
