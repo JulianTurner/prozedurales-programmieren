@@ -1,11 +1,24 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-struct Node {
+#define NODESCOUNT 1
+#define DELTASCOUNT 5
+
+typedef struct Delta {
+  char input[5];
+  char destination[5];
+} Delta;
+
+typedef struct Node {
   char name[3];
   bool isStart;
   bool isFinish;
-};
+  Delta deltas[DELTASCOUNT];
+  // q2, a
+  // q2, b
+  // q1, a
+  // array delta[] = [{q2, a}, {q2,b}]
+} Node;
 
 int q0() {
   // if a
@@ -34,14 +47,24 @@ int q1() {
 
 // das input wort wäre a a b
 int main() {
+
+  // zustände
   // startzustände []
   // endzustände []
+  struct Node nodes[NODESCOUNT] = {
+      {"Q0",
+       true,
+       false,
+       {{"a", "Q0"}, {"a", "Q1"}, {"a", "Q2"}, {"a", "Q3"}, {"a", "Q4"}}}};
 
-  //
-  struct Node nodes[2] = {{"q1", true, false}, {"q2", false, true}};
+  for (int i = 0; i < NODESCOUNT; i++) {
+    Node node = nodes[i];
+    printf("\n%s\n", node.name);
 
-  for (int i = 0; i <= 2; i++) {
-    printf("%s\n", nodes[i].name);
+    for (int j = 0; j < DELTASCOUNT; j++) {
+      printf("Input: %s\n", node.deltas[j].input);
+      printf("Destination: %s\n", node.deltas[j].destination);
+    }
   }
 
   return 0;
