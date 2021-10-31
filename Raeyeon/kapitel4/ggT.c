@@ -22,4 +22,7 @@ int main(){
 
     printf("ggT : %d", a);
 
+    return 0;
+
+
 }
