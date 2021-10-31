@@ -10,7 +10,32 @@ int main(){
     printf("Bitte geben Sie die zweite Zahl ein: ");
     scanf("%d", &b);
 
+    for(i=1; b<a; i++) {
+
+        a -= b;
+
+        for(i=1; b>a; i++) {
+
+          if (a<b){
+            b -= a;
+          if (b==a){
+            printf("ggT : %d", b);
+        } if (b==a==1){
+            printf("Die haben keinen ggT");
+        } 
+
+        }
+
+
+        }
+
+    }
+
+        
     
+
+
+
 
     
 
