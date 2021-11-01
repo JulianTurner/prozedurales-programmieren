@@ -51,7 +51,7 @@ int main(){
 
     ){
 
-    printf("A B C D E F G H : %d %d %d %d %d %d %d %d", A,B,C,D,E,F,G,H);
+    printf("A B C D E F G H : %d %d %d %d %d %d %d %d\n", A,B,C,D,E,F,G,H);
     printf("a b c d e f g h : %d %d %d %d %d %d %d %d", a,b,c,d,e,f,g,h);
 
     }
