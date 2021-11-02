@@ -6,21 +6,23 @@ int main() {
 
     i=1;
 
-    while(sr>0){
+    while(i<=20){
+
+        osr -= osr*10/100;   //beförderung
+        sd += osr*10/100;
+        sr -= sr*20/100;
+        osr += sr*20/100;
 
         sd -= sd*20/100;   //ruhestand
         osr -= osr*20/100;
-        sr -= sr*20/100;
 
-        sd += osr*10/100;   //beförderung
-        osr -= osr*10/100 - sr*20/100;
-        sr -= sr*20/100;
+        sr = 1200 - sd - osr;
 
         i++;
 
     }
 
-    printf("%d Jahre", 3*i);
+    printf("Jahre, Studiendirektoren, Oberstudienräte, Studienräte : %d, %d, %d, %d", 3*i, sd, osr, sr);
 
     return 0;
 }
