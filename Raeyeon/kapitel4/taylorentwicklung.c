@@ -1,26 +1,30 @@
 #include<stdio.h>
 #include<math.h>
+#define N 20
 
 int main(){
 
-    int i, g;
-    double x, a;
-
-    a = sin(x);
+    double x, y, a;
 
     printf("x = ");
     scanf("%lf\n", &x);
 
+    a = sin(x);
     printf("a = %f\n", a);
 
-    for(i=1; i<10 ; i++){
+    int j=-1;
+    int k=-1;
+    int b;
 
-        g *= 2*i-1;  
-        x *= (double) pow(-1,i+1) * pow(x,2*i-1) / g;
-
+    for(int i=1; i<=N; i++){
+        j *= k;
+        for(int b=1; b<=2*i-1; b++){
+            b *= b;
+            x *= x;
+        }
+        y += (double) j * x * b;
     }
-
-    printf("sin(x) = %f", x);
+    printf("sin(x) = %f", y);
 
 
     return 0;
