@@ -14,15 +14,15 @@ int main(){
 
     int j=-1;
     int k=-1;
-    int b;
 
     for(int i=1; i<=N; i++){
         j *= k;
         for(int b=1; b<=2*i-1; b++){
             b *= b;
             x *= x;
+            y += (double) j * x * b;
         }
-        y += (double) j * x * b;
+        
     }
     printf("sin(x) = %f", y);
 
