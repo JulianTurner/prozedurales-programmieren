@@ -14,27 +14,27 @@ int main() {
     scanf("%d", &anzahl);
   }
 
-  int zahlen[anzahl], max = 0, summe = 0, min = 0, i;
+  int zahl, max = 0, summe = 0, min = 0, i;
 
   for (int i = 0; i < anzahl; i++) {
     printf("%i von %i: ", i + 1, anzahl);
-    scanf("%d", &zahlen[i]);
+    scanf("%d", &zahl);
     printf("\n");
 
     if (!max || !min) {
-      max = zahlen[i];
-      min = zahlen[i];
+      max = zahl;
+      min = zahl;
     }
 
-    if (zahlen[i] > max) {
-      max = zahlen[i];
+    if (zahl > max) {
+      max = zahl;
     }
 
-    if (zahlen[i] < min) {
-      min = zahlen[i];
+    if (zahl < min) {
+      min = zahl;
     }
 
-    summe += zahlen[i];
+    summe += zahl;
   }
   printf("Die größte Zahl ist %d\n", max);
   printf("Die kleinste Zahl ist %d\n", min);
