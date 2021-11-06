@@ -20,7 +20,9 @@ int main() {
     printf("%i von %i: ", i + 1, anzahl);
     scanf("%d", &zahlen[i]);
     printf("\n");
+  }
 
+  for (i = 0; i < anzahl; i++) {
     if (!max || !min) {
       max = zahlen[i];
       min = zahlen[i];
@@ -36,6 +38,7 @@ int main() {
 
     summe += zahlen[i];
   }
+
   printf("Die größte Zahl ist %d\n", max);
   printf("Die kleinste Zahl ist %d\n", min);
   printf("Der Durchschnitt ist %f\n", (float)summe / anzahl);
