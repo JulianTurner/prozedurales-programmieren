@@ -8,4 +8,6 @@
     printf("%d Bytes\n",sizeof(long long));
     printf("%d Bytes\n",sizeof(float));
     printf("%d Bytes\n",sizeof(double));
+    
+    return 0;
     }
