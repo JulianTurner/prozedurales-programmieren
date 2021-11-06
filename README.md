@@ -158,4 +158,4 @@ dank den Daten im .vscode Ordner einfach die Datei `hello_world.c` öffnen und m
 :star_struck: Ihr wollt mitwirken und richtig druchstarten? Dann =>  :raising_hand_man: :raising_hand_woman:
 
 Mein persönliches Setup besteht aus:
-Widows 10 und WSL 2 mit Ubuntu (kann ich nur empfehlen)
+Widows 11 und WSL 2 mit Ubuntu (kann ich nur empfehlen)
