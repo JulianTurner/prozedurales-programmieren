@@ -113,7 +113,7 @@
   ```
   cd prozedurales-programmieren      
   ```
-  VS Code mit dem Ornder starten
+  VS Code mit dem Ordner starten
   ```
   code .      
   ```
