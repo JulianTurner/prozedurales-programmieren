@@ -14,11 +14,22 @@ int main(){
         for(i=0; i<size; i++){
             scanf("%d", &y);
             Array[i] = y;
-        }/*for(i=size; i<5; i++){
-            Array[i] = 0;
-        }*/
+        }
         }
     
+    //min max
+    int max = Array[0];
+    int min = Array[0];
+    for(i=0; i<size; i++){    
+        if(max<=Array[i]){
+            max = Array[i];
+        }if(min>=Array[i]){
+            min = Array[i];
+        }
+    }
+    printf("Min : %d, Max : %d\n", min, max);
+    
+
     //Durchschnitt
     int x = 0;
     double d;
@@ -28,7 +39,6 @@ int main(){
     d = (double) x/size;
     printf("Durchschnitt : %f", d);
 
-    
-    
+
     return 0;
 }
