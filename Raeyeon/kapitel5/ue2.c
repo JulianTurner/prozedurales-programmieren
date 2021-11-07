@@ -21,16 +21,14 @@ int main(){
     
     //Durchschnitt
     int x = 0;
-    int d;
+    double d;
     for(i=0; i<size; i++){
         x += Array[i];
     }
-    d = x/size;
-    printf("Durchschnitt : %d", d);
+    d = (double) x/size;
+    printf("Durchschnitt : %f", d);
 
-        /*for(i=0; i<size; i++){
-            printf("%d ", Array[i]);
-        }*/
+    
     
     return 0;
 }
