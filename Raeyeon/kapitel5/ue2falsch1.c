@@ -16,21 +16,20 @@ int main(){
             Array[i] = y;
         }/*for(i=size; i<5; i++){
             Array[i] = 0;
-        }*/
+        }*/for(i=0; i<size; i++){
+            if(Array[i]<Array[i+1]){
+                int x = Array[i+1];
+                printf("Max : %d\n", x);
+            }if(Array[i]>Array[i+1]){
+                int x = Array[i];
+                printf("Min : %d\n", x);
+            }if(Array[i]=Array[i+1]){
+                printf("kein min max\n");
+            }
         }
-    
-    //Durchschnitt
-    int x = 0;
-    int d;
-    for(i=0; i<size; i++){
-        x += Array[i];
-    }
-    d = x/size;
-    printf("Durchschnitt : %d", d);
-
         /*for(i=0; i<size; i++){
             printf("%d ", Array[i]);
         }*/
-    
+    }
     return 0;
 }
