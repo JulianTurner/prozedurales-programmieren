@@ -1,29 +1,25 @@
 #include<stdio.h>
-#include<string.h>
 
 int main(){
 
-    char string[100];
-    char unterscheiden[100];
-    int i, s;
+    char wort[100];
+    int vorn, hinten;
 
-    printf("Text : ");
-    scanf("%s", string);
+    printf("Wort : ");
+    scanf("%s", wort);
 
-    for(i=0; string[i] !=0; i++){
-        continue;
-    }
-    for(s=0, i--; s<=i; i--, s++){
-        if(string[s]!=string[i]){
+    for(hinten=0; wort[hinten] !=0; hinten++)
+        ;
+
+    for(vorn=0, hinten--; vorn<hinten; vorn++, hinten--){
+        if( (wort[vorn] | 0x20)!= (wort[hinten] | 0x20))
             break;
-        }
-    } 
-
-    if(s<i){
-        printf("kein Palindrom");
-    }else{
-        printf("Palindrom");
     }
+
+    if(vorn<hinten)
+        printf("Kein Palindrom");
+    else
+        printf("Palindrom");
 
     return 0;
 }
