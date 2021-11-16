@@ -12,16 +12,19 @@ int main(){
 
     for(int i=0; i<10; i++){
         for(int j=0; j<10; j++){
-            if(j<i)
-                if(zahlen[i]>zahlen[j])
+            if(j<i){
+                if(zahlen[i]>zahlen[j]){
                     x = zahlen[i];
                     zahlen[j]=zahlen[i];
-                    zahlen[i]=x;
-            if(j>i)
-                if(zahlen[i]<zahlen[j])
+                    zahlen[j]=x;
+                }
+            }if(j>i){
+                if(zahlen[i]<zahlen[j]){
                     x = zahlen[i];
                     zahlen[j]=zahlen[i];
-                    zahlen[i]=x;
+                    zahlen[j]=x;
+                }
+            }
         }
     }
 
