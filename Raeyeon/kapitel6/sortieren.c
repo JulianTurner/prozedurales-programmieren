@@ -14,15 +14,15 @@ int main(){
         for(int j=0; j<10; j++){
             if(j<i){
                 if(zahlen[i]>zahlen[j]){
-                    x = zahlen[i];
+                    x = zahlen[j];
                     zahlen[j]=zahlen[i];
-                    zahlen[j]=x;
+                    zahlen[i]=x;
                 }
             }if(j>i){
                 if(zahlen[i]<zahlen[j]){
-                    x = zahlen[i];
+                    x = zahlen[j];
                     zahlen[j]=zahlen[i];
-                    zahlen[j]=x;
+                    zahlen[i]=x;
                 }
             }
         }
