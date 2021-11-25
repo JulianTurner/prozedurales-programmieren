@@ -1,10 +1,11 @@
 # Ignore everything in a root
 /*
+/*/**/*
 # But not files with extension .c or .md
-/*
 !/*.c
 !/*/
-/*/**/*
 !/*/**/
 !/*/**/*.c
 !/*.md
+!*/*.json
+!*/Dockerfile
