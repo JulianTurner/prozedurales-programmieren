@@ -29,7 +29,8 @@
 		"visualstudioexptteam.vscodeintellicode",
 		"ms-vscode.cpptools",
 		"eamodio.gitlens",
-		"ms-vsliveshare.vsliveshare"
+		"ms-vsliveshare.vsliveshare",
+		"mhutchie.git-graph"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
