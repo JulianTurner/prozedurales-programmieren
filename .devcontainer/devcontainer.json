@@ -30,7 +30,8 @@
 		"ms-vscode.cpptools",
 		"eamodio.gitlens",
 		"ms-vsliveshare.vsliveshare",
-		"mhutchie.git-graph"
+		"mhutchie.git-graph",
+		"aaron-bond.better-comments"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
