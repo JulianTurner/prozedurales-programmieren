@@ -25,8 +25,8 @@
 
 
 ----------
-Ihr könnt jetzt auch in einem fertigen Container entwickeln
-So habt ihr immer die richtige Config ohne Spuren von GCC usw. auf dem OS zu hinterlassen. 
+Ihr könnt jetzt auch in einem fertigen Container entwickeln.  
+So habt ihr immer die richtige Config & Tools ohne sich Sorgen um die Umgebung zu machen und ohne Spuren auf dem OS zu hinterlassen. 
 ## Container
 ### Docker installieren 
 https://www.docker.com/get-started
@@ -45,13 +45,13 @@ https://code.visualstudio.com/Download
 https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
 
 
-Danach die [Repo klonen (Linux, Windows, Mac)](#repo-klonen-linux-windows-mac) klonen.  
-In VSCode danach das Menü öffen mit zb. F1 unter Winodws  
+Danach die [Repo klonen (Linux, Windows, Mac)](#repo-klonen-linux-windows-mac).  
+In VSCode das Menü öffen mit zb. F1  
 Ihr wählt "Open Folder in Container".
 ![image](https://microsoft.github.io/vscode-remote-release/images/remote-command-palette.png)
 
 Anschließend wird die Entwicklungsumgebung installiert mit GCC, GDB, GIT allen VS Code Extensions sowie die richtigen Einstellungen. 
->Beim ersten mal kann das auch mal 5min dauern.  
+>Beim ersten mal kann das über 5min dauern.  
 
 Nun könnt ihr mit F5 Debuggen und starten.  
 Der Code wird bei einer Änderung vom Fokus gespeichert und formatiert.
