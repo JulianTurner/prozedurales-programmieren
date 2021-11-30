@@ -2,7 +2,7 @@
 
 #define STRLEN 100
 
-void chop(char string[]) {
+void chomp(char string[]) {
   int i;
   for (i = 0; string[i]; i++)
     ;
@@ -17,7 +17,7 @@ int main() {
   printf("Bitte einen string eingeben: ");
   fgets(string, STRLEN, stdin);
 
-  chop(string);
+  chomp(string);
 
   for (i = 0; string[i]; i++)
     ;

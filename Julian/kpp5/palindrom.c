@@ -2,7 +2,7 @@
 // rentner, lagerregal
 #define STRLEN 100
 
-void chop(char string[]) {
+void chomp(char string[]) {
   int i;
 
   for (i = 0; string[i]; i++)
@@ -34,7 +34,7 @@ int main() {
   printf("Bitte einen string eingeben um auf ein Palindrom zu prüfen: ");
   fgets(string, STRLEN, stdin);
 
-  chop(string);
+  chomp(string);
 
   printf(isPalindrom(string) ? "Das Wort %s ist ein Palindrom.\n"
                              : "Das Wort %s ist kein Palindrom\n",
