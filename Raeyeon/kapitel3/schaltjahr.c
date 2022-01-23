@@ -29,7 +29,7 @@ int main(){
         }
 
 
-    printf("%d", tag);
+    printf("%d. Tag", tag);
 
 
     return 0;

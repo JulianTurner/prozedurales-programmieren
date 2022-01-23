@@ -1,28 +1,62 @@
 ## TOC
 
 - [TOC](#toc)
+- [Container](#container)
+	- [Docker installieren](#docker-installieren)
+	- [VS Code installieren](#vs-code-installieren)
+	- [Die Extension "Remote Containers" installieren](#die-extension-remote-containers-installieren)
 - [gcc & gdb installieren](#gcc--gdb-installieren)
-  - [Linux](#linux)
-  - [Windows](#windows)
-  - [Mac](#mac)
-  - [Anschließend überprüfen ob gcc & gdb installiert ist](#anschließend-überprüfen-ob-gcc--gdb-installiert-ist)
+	- [Linux](#linux)
+	- [Windows](#windows)
+	- [Mac](#mac)
+	- [Anschließend überprüfen ob gcc & gdb installiert ist](#anschließend-überprüfen-ob-gcc--gdb-installiert-ist)
 - [git installieren](#git-installieren)
-  - [Linux](#linux-1)
-  - [Windows](#windows-1)
-  - [MAC](#mac-1)
-  - [Anschließend überprüfen ob Git installiert ist](#anschließend-überprüfen-ob-git-installiert-ist)
-  - [Name angeben](#name-angeben)
-  - [Email angeben](#email-angeben)
+	- [Linux](#linux-1)
+	- [Windows](#windows-1)
+	- [MAC](#mac-1)
+	- [Anschließend überprüfen ob Git installiert ist](#anschließend-überprüfen-ob-git-installiert-ist)
+	- [Name angeben](#name-angeben)
+	- [Email angeben](#email-angeben)
 - [Repo klonen (Linux, Windows, Mac)](#repo-klonen-linux-windows-mac)
 - [Kompilieren & Ausführen](#kompilieren--ausführen)
-  - [VS Code](#vs-code)
-  - [Terminal](#terminal)
-  - [Support :heart: & Feedback	:muscle:](#support-heart--feedbackmuscle)
+	- [VS Code](#vs-code)
+	- [Terminal](#terminal)
+	- [Support :heart: & Feedback	:muscle:](#support-heart--feedbackmuscle)
 
 
 ----------
+Ihr könnt jetzt auch in einem fertigen Container entwickeln.  
+So habt ihr immer die richtige Config & Tools ohne sich Sorgen um die Umgebung zu machen und ohne Spuren auf dem OS zu hinterlassen. 
+## Container
+### Docker installieren 
+https://www.docker.com/get-started
+
+> Winodws user können gleich WSL2 als Backend benutzen 
+>```
+>wsl --install
+>```
+
+### VS Code installieren
+
+https://code.visualstudio.com/Download
+
+### Die Extension "Remote Containers" installieren
+
+https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
 
 
+Danach die [Repo klonen (Linux, Windows, Mac)](#repo-klonen-linux-windows-mac).  
+In VSCode das Menü öffen mit zb. F1  
+Ihr wählt "Open Folder in Container".
+![image](https://microsoft.github.io/vscode-remote-release/images/remote-command-palette.png)
+
+Anschließend wird die Entwicklungsumgebung installiert mit GCC, GDB, GIT allen VS Code Extensions sowie die richtigen Einstellungen. 
+>Beim ersten mal kann das über 5min dauern.  
+
+Nun könnt ihr mit F5 Debuggen und starten.  
+Der Code wird bei einer Änderung vom Fokus gespeichert und formatiert.
+
+----------
 ## gcc & gdb installieren
 
   ### Linux
@@ -113,7 +147,7 @@
   ```
   cd prozedurales-programmieren      
   ```
-  VS Code mit dem Ornder starten
+  VS Code mit dem Ordner starten
   ```
   code .      
   ```
@@ -158,4 +192,4 @@ dank den Daten im .vscode Ordner einfach die Datei `hello_world.c` öffnen und m
 :star_struck: Ihr wollt mitwirken und richtig druchstarten? Dann =>  :raising_hand_man: :raising_hand_woman:
 
 Mein persönliches Setup besteht aus:
-Widows 10 und WSL 2 mit Ubuntu (kann ich nur empfehlen)
+Widows 11 und WSL 2 mit Ubuntu (kann ich nur empfehlen)
