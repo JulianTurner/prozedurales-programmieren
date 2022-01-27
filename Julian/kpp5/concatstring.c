@@ -12,7 +12,7 @@ void chomp(char wort[]) {
 int main() {
   char vorname[50];
   char nachname[50];
-  char name[50];
+  char name[100];
 
   fgets(vorname, 50, stdin);
   fgets(nachname, 50, stdin);
