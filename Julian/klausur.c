@@ -11,8 +11,8 @@ char *verknuepfe(char wort1[], char wort2[], char trz) {
   for (wlen2 = 0; wort2[wlen2]; wlen2++) {
     ;
   }
-
-  char *wort = (char *)malloc((wlen1 + wlen2 + 1) * sizeof(char));
+  // Achtung +2 da Nullbyte gesetzt werden muss
+  char *wort = (char *)malloc((wlen1 + wlen2 + 2) * sizeof(char));
 
   int wi;
 
